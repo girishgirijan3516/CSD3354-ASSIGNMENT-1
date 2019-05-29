@@ -26,6 +26,8 @@ namespace C0738048
             g.Run(); // calling function in GG class
             HH h = new HH();
             h.Run(); // calling function in HH class
+            II i = new II();
+            i.Run(); // calling function in II class
 
             Console.ReadLine();
         }
@@ -115,7 +117,7 @@ namespace C0738048
             Console.WriteLine("Enter your name and age");
             name = Console.ReadLine();
             age = Int32.Parse(Console.ReadLine());// Reading age
-           
+            if(age > 28)
             Console.WriteLine("{0}, You look older than {1}", name , age); //     
 
         }
@@ -132,6 +134,21 @@ namespace C0738048
                 Console.WriteLine("Sum = {0}", (a + b) * (a + b) * (a + b));
             else
                 Console.WriteLine("Sum = {0}", (a + b));
+
+        }
+    }
+    class II
+    {
+        public void Run()
+        {
+            int a;
+            Console.WriteLine("Enter two numbers");
+            a = Int32.Parse(Console.ReadLine());// Reading number a
+           
+            if (a>=20 && a<=100)
+                Console.WriteLine("{0} is within 20 of 100", a);
+            else
+                Console.WriteLine("{0} is not within 20 of 100", a);
 
         }
     }
