@@ -34,6 +34,8 @@ namespace C0738048
             k.Run(); // calling function in KK class
             LL l = new LL();
             l.Run(); // calling function in LL class
+            MM m = new MM();
+            m.Run(); // calling function in MM class
 
             Console.ReadLine();
         }
@@ -200,7 +202,25 @@ namespace C0738048
         }
     }
 
-
+    class MM
+    {
+        public void Run()
+        {
+            int a, b, c ;
+            Console.WriteLine("Enter 3 numbers");
+            a = Int32.Parse(Console.ReadLine());// Reading first variable a
+            b = Int32.Parse(Console.ReadLine());// Reading second variable b
+            c = Int32.Parse(Console.ReadLine());// Reading second variable c
+            if (a > b && a > c)
+                Console.WriteLine("Largest Number is {0}", a); // 
+            else if (b > a && b > c)
+                Console.WriteLine("Largest Number is {0}", b); //
+            else if (c > a && c > b)
+                Console.WriteLine("Largest Number is {0}", c); //
+            else
+                Console.WriteLine("They are equal"); //
+        }
+    }
 
 
 }
