@@ -10,7 +10,7 @@ namespace C0738048
     {
         static void Main(string[] args)
         {
-            AA a = new AA();
+            /*AA a = new AA();
             a.Run(); // calling function in AA class
             BB b = new BB();
             b.Run(); // calling function in BB class
@@ -19,8 +19,9 @@ namespace C0738048
             DD d = new DD();
             d.Run(); // calling function in DD class
             EE e = new EE();
-            e.Run(); // calling function in EE class
-
+            e.Run(); // calling function in EE class*/
+            FF f = new FF();
+            f.Run(); // calling function in EE class
 
             Console.ReadLine();
         }
@@ -70,7 +71,7 @@ namespace C0738048
             Console.WriteLine("Enter 3 numbers");
             a = Int32.Parse(Console.ReadLine());// Reading first variable a
             b = Int32.Parse(Console.ReadLine());// Reading second variable b
-            c = Int32.Parse(Console.ReadLine());// Reading third variable b
+            c = Int32.Parse(Console.ReadLine());// Reading third variable c
             Console.WriteLine("Product of {0} * {1} * {2} = {3}", a, b, c , a*b*c); //           
              
         }
@@ -84,6 +85,20 @@ namespace C0738048
             a = Int32.Parse(Console.ReadLine());// Reading first variable a
             for(i=1;i<=10;++i)
                 Console.WriteLine("{0} * {1}  = {2}", i, a, i*a); //    
+
+        }
+    }
+    class FF
+    {
+        public void Run()
+        {
+            int a, b, c, d;
+            Console.WriteLine("Enter a numbers to get multipilication table");
+            a = Int32.Parse(Console.ReadLine());// Reading first variable a
+            b = Int32.Parse(Console.ReadLine());// Reading second variable b
+            c = Int32.Parse(Console.ReadLine());// Reading third variable c
+            d = Int32.Parse(Console.ReadLine());// Reading fourth variable d
+            Console.WriteLine("({0} + {1} + {2} + {3}) / 4 = {4}", a, b, c, d, (a + b + c + d) / 4.0); //     
 
         }
     }
