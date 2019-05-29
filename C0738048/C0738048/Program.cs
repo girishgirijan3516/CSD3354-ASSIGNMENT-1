@@ -24,7 +24,8 @@ namespace C0738048
             f.Run(); // calling function in FF class
             GG g = new GG();
             g.Run(); // calling function in GG class
-           
+            HH h = new HH();
+            h.Run(); // calling function in HH class
 
             Console.ReadLine();
         }
@@ -119,7 +120,21 @@ namespace C0738048
 
         }
     }
-    
+    class HH
+    {
+        public void Run()
+        {
+            int a, b ;            
+            Console.WriteLine("Enter two numbers");            
+            a = Int32.Parse(Console.ReadLine());// Reading number a
+            b = Int32.Parse(Console.ReadLine());// Reading number b
+            if(a == b)
+                Console.WriteLine("Sum = {0}", (a + b) * (a + b) * (a + b));
+            else
+                Console.WriteLine("Sum = {0}", (a + b));
+
+        }
+    }
 
 
 
