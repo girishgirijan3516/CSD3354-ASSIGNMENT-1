@@ -32,7 +32,8 @@ namespace C0738048
             j.Run(); // calling function in JJ class
             KK k = new KK();
             k.Run(); // calling function in KK class
-            
+            LL l = new LL();
+            l.Run(); // calling function in LL class
 
             Console.ReadLine();
         }
@@ -184,7 +185,20 @@ namespace C0738048
             Console.WriteLine("Sum of first 10 natural numbers {0}", sum);
         }
     }
-   
+    class LL
+    {
+        public void Run()
+        {
+            int a, b;
+            Console.WriteLine("Enter two numbers");
+            a = Int32.Parse(Console.ReadLine());// Reading first variable a
+            b = Int32.Parse(Console.ReadLine());// Reading second variable b
+            if(a == b)
+                Console.WriteLine("They are equal"); // 
+            else
+                Console.WriteLine("They are not equal"); // 
+        }
+    }
 
 
 
