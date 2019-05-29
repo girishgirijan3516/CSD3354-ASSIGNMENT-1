@@ -30,6 +30,9 @@ namespace C0738048
             i.Run(); // calling function in II class
             JJ j = new JJ();
             j.Run(); // calling function in JJ class
+            KK k = new KK();
+            k.Run(); // calling function in KK class
+            
 
             Console.ReadLine();
         }
@@ -167,6 +170,21 @@ namespace C0738048
 
         }
     }
+    class KK
+    {
+        public void Run()
+        {
+            int i = 1, sum = 0;
+            while (i <= 10)
+            {
+                sum += i;
+                ++i;
+            }            
+
+            Console.WriteLine("Sum of first 10 natural numbers {0}", sum);
+        }
+    }
+   
 
 
 
