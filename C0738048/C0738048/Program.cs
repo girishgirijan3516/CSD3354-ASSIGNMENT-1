@@ -28,6 +28,8 @@ namespace C0738048
             h.Run(); // calling function in HH class
             II i = new II();
             i.Run(); // calling function in II class
+            JJ j = new JJ();
+            j.Run(); // calling function in JJ class
 
             Console.ReadLine();
         }
@@ -117,7 +119,7 @@ namespace C0738048
             Console.WriteLine("Enter your name and age");
             name = Console.ReadLine();
             age = Int32.Parse(Console.ReadLine());// Reading age
-            if(age > 28)
+           
             Console.WriteLine("{0}, You look older than {1}", name , age); //     
 
         }
@@ -149,6 +151,19 @@ namespace C0738048
                 Console.WriteLine("{0} is within 20 of 100", a);
             else
                 Console.WriteLine("{0} is not within 20 of 100", a);
+
+        }
+    }
+    class JJ
+    {
+        public void Run()
+        {
+            int i, sum = 0;
+            for (i = 1; i <= 10; ++i)
+                sum += i;
+            
+           Console.WriteLine("Sum of first 10 natural numbers {0}", sum);
+        
 
         }
     }
