@@ -10,7 +10,7 @@ namespace C0738048
     {
         static void Main(string[] args)
         {
-            /*AA a = new AA();
+            AA a = new AA();
             a.Run(); // calling function in AA class
             BB b = new BB();
             b.Run(); // calling function in BB class
@@ -19,9 +19,12 @@ namespace C0738048
             DD d = new DD();
             d.Run(); // calling function in DD class
             EE e = new EE();
-            e.Run(); // calling function in EE class*/
+            e.Run(); // calling function in EE class
             FF f = new FF();
-            f.Run(); // calling function in EE class
+            f.Run(); // calling function in FF class
+            GG g = new GG();
+            g.Run(); // calling function in GG class
+           
 
             Console.ReadLine();
         }
@@ -102,7 +105,21 @@ namespace C0738048
 
         }
     }
+    class GG
+    {
+        public void Run()
+        {
+            int age;
+            string name;
+            Console.WriteLine("Enter your name and age");
+            name = Console.ReadLine();
+            age = Int32.Parse(Console.ReadLine());// Reading age
+           
+            Console.WriteLine("{0}, You look older than {1}", name , age); //     
 
+        }
+    }
+    
 
 
 
