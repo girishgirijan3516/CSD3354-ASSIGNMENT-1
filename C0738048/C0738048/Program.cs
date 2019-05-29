@@ -16,6 +16,9 @@ namespace C0738048
             b.Run(); // calling function in BB class
             CC c = new CC();
             c.Run(); // calling function in CC class
+            DD d = new DD();
+            d.Run(); // calling function in DD class
+            
 
 
             Console.ReadLine();
@@ -58,6 +61,22 @@ namespace C0738048
             Console.WriteLine("After Swapping A = {0} B = {1}", a, b); // 
         }
     }
+    class DD
+    {
+        public void Run()
+        {
+            int a, b, c;
+            Console.WriteLine("Enter 3 numbers");
+            a = Int32.Parse(Console.ReadLine());// Reading first variable a
+            b = Int32.Parse(Console.ReadLine());// Reading second variable b
+            c = Int32.Parse(Console.ReadLine());// Reading third variable b
+            Console.WriteLine("Product of {0} * {1} * {2} = {3}", a, b, c , a*b*c); //           
+             
+        }
+    }
+    
+
+
 
 
 
