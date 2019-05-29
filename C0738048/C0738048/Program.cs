@@ -18,7 +18,8 @@ namespace C0738048
             c.Run(); // calling function in CC class
             DD d = new DD();
             d.Run(); // calling function in DD class
-            
+            EE e = new EE();
+            e.Run(); // calling function in EE class
 
 
             Console.ReadLine();
@@ -74,7 +75,18 @@ namespace C0738048
              
         }
     }
-    
+    class EE
+    {
+        public void Run()
+        {
+            int a, i;
+            Console.WriteLine("Enter a numbers to get multipilication table");
+            a = Int32.Parse(Console.ReadLine());// Reading first variable a
+            for(i=1;i<=10;++i)
+                Console.WriteLine("{0} * {1}  = {2}", i, a, i*a); //    
+
+        }
+    }
 
 
 
