@@ -10,8 +10,13 @@ namespace C0738048
     {
         static void Main(string[] args)
         {
-            AA a = new AA();
+           AA a = new AA();
             a.Run(); // calling function in AA class
+            BB b = new BB();
+            b.Run(); // calling function in BB class
+           
+
+
             Console.ReadLine();
         }
     }
@@ -24,5 +29,20 @@ namespace C0738048
             Console.WriteLine("Hello! {0}", name); // Displaying name 
         }
     }
+    class BB
+    {
+        public void Run()
+        {
+            int a, b;
+            Console.WriteLine("Enter two numbers");
+            a = Int32.Parse(Console.ReadLine());// Reading first variable a
+            b = Int32.Parse(Console.ReadLine());// Reading second variable b
+            Console.WriteLine("Sum = {0}", a + b); // Display sum 
+            Console.WriteLine("Multiplication = {0}", a * b); // Display product 
+            Console.WriteLine("Division = {0}", a / b); // Display product
+        }
+    }
     
+
+
 }
