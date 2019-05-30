@@ -40,6 +40,8 @@ namespace C0738048
             b1.Run(); // calling function in B1 class
             B2 b2 = new B2();
             b2.Run(); // calling function in B2 class
+            B3 b3 = new B3();
+            b3.Run(); // calling function in B2 class
 
             Console.ReadLine();
         }
@@ -264,14 +266,32 @@ namespace C0738048
             Console.WriteLine("Enter a String");
             string s = Console.ReadLine();
             int lengthOfMovingPart = 2;
-            if (s.Length > lengthOfMovingPart)
+            if (s.Length >= lengthOfMovingPart)
             {
                 Console.WriteLine("Before moving 2 charactres -> {0}", s);
                 s = string.Format("{0}{1}", s.Substring(s.Length - lengthOfMovingPart), s.Substring(0, s.Length - lengthOfMovingPart));
                 Console.WriteLine("After moving 2 charactres -> {0}",s); 
             }
             else
-                Console.WriteLine("String length should be more than 2");
+                Console.WriteLine("String length should be atleast 2 characters long");
+
+        }
+    }
+
+    class B3
+    {
+        public void Run()
+        {
+            Console.WriteLine("Enter a String");
+            string s = Console.ReadLine();
+            int lengthOfMovingPart = 2;
+            if (s.Length >= lengthOfMovingPart)
+            {               
+                s = string.Format("{0}", s.Substring((s.Length - 1)/2, 2));                
+                Console.WriteLine("New String using 2 middle characters -> {0}", s);
+            }
+            else
+                Console.WriteLine("String length should be atleast 2 characters long");
 
         }
     }
