@@ -38,6 +38,8 @@ namespace C0738048
             m.Run(); // calling function in MM class
             B1 b1 = new B1();
             b1.Run(); // calling function in B1 class
+            B2 b2 = new B2();
+            b2.Run(); // calling function in B2 class
 
             Console.ReadLine();
         }
@@ -248,14 +250,31 @@ namespace C0738048
                 }
 
                 if (count == 500)
-                    break;
-                    
+                    break;                    
 
-            }
-            
-
+            }    
 
         }
     }
+
+    class B2
+    {
+        public void Run()
+        {
+            Console.WriteLine("Enter a String");
+            string s = Console.ReadLine();
+            int lengthOfMovingPart = 2;
+            if (s.Length > lengthOfMovingPart)
+            {
+                Console.WriteLine("Before moving 2 charactres -> {0}", s);
+                s = string.Format("{0}{1}", s.Substring(s.Length - lengthOfMovingPart), s.Substring(0, s.Length - lengthOfMovingPart));
+                Console.WriteLine("After moving 2 charactres -> {0}",s); 
+            }
+            else
+                Console.WriteLine("String length should be more than 2");
+
+        }
+    }
+
 
 }
