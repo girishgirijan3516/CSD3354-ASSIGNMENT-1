@@ -44,6 +44,8 @@ namespace C0738048
             b3.Run(); // calling function in B3 class
             B4 b4 = new B4();
             b4.Run(); // calling function in B4 class
+            B5 b5 = new B5();
+            b5.Run(); // calling function in B5 class
 
             Console.ReadLine();
         }
@@ -318,6 +320,25 @@ namespace C0738048
             Console.WriteLine(" {0} ", stval);
             return NaturalNumbers(stval + 1, ctr);
         }
+    }
+    class B5
+    {
+        public void Run()
+        {
+            string s;
+            int i, numSpace = 0;
+            Console.WriteLine("Enter a string");
+            s = Console.ReadLine();
+            for (i = 0; i < s.Length; i++)
+            {                 
+                if (s.Substring(i, 1) == " ")
+                    ++numSpace;
+            }
+            Console.WriteLine("Number of spaces : {0}", numSpace);
+
+
+        }
+        
     }
 
 
