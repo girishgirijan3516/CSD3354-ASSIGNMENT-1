@@ -41,7 +41,9 @@ namespace C0738048
             B2 b2 = new B2();
             b2.Run(); // calling function in B2 class
             B3 b3 = new B3();
-            b3.Run(); // calling function in B2 class
+            b3.Run(); // calling function in B3 class
+            B4 b4 = new B4();
+            b4.Run(); // calling function in B4 class
 
             Console.ReadLine();
         }
@@ -293,6 +295,28 @@ namespace C0738048
             else
                 Console.WriteLine("String length should be atleast 2 characters long");
 
+        }
+    }
+
+    class B4
+    {
+        public void Run()
+        {                      
+            Console.WriteLine("Enter how many numbers to print");
+            int ctr = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("First {0} natural number", ctr);
+            NaturalNumbers(1, ctr); // Calling recursive function
+            
+        }
+        public int NaturalNumbers(int stval, int ctr)
+        {
+            if (ctr < 1)
+            {
+                return stval;
+            }
+            ctr--;
+            Console.WriteLine(" {0} ", stval);
+            return NaturalNumbers(stval + 1, ctr);
         }
     }
 
