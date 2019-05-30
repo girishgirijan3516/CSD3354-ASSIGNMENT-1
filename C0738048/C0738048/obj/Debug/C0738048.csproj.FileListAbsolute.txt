@@ -5,3 +5,10 @@ U:\Users\738048\ApplePie\C0738048\C0738048\obj\Debug\C0738048.csprojAssemblyRefe
 U:\Users\738048\ApplePie\C0738048\C0738048\obj\Debug\C0738048.csproj.CoreCompileInputs.cache
 U:\Users\738048\ApplePie\C0738048\C0738048\obj\Debug\C0738048.exe
 U:\Users\738048\ApplePie\C0738048\C0738048\obj\Debug\C0738048.pdb
+C:\Users\girish\ApplePie\C0738048\C0738048\bin\Debug\C0738048.exe.config
+C:\Users\girish\ApplePie\C0738048\C0738048\bin\Debug\C0738048.exe
+C:\Users\girish\ApplePie\C0738048\C0738048\bin\Debug\C0738048.pdb
+C:\Users\girish\ApplePie\C0738048\C0738048\obj\Debug\C0738048.csprojAssemblyReference.cache
+C:\Users\girish\ApplePie\C0738048\C0738048\obj\Debug\C0738048.csproj.CoreCompileInputs.cache
+C:\Users\girish\ApplePie\C0738048\C0738048\obj\Debug\C0738048.exe
+C:\Users\girish\ApplePie\C0738048\C0738048\obj\Debug\C0738048.pdb

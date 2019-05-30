@@ -36,6 +36,8 @@ namespace C0738048
             l.Run(); // calling function in LL class
             MM m = new MM();
             m.Run(); // calling function in MM class
+            B1 b1 = new B1();
+            b1.Run(); // calling function in B1 class
 
             Console.ReadLine();
         }
@@ -222,5 +224,38 @@ namespace C0738048
         }
     }
 
+    class B1
+    {
+        public void Run()
+        {
+            int i, j, flag, count = 0;
+            Console.WriteLine("First 500 prime numbers");
+            for (i = 1; i > 0; ++i)
+            {                
+                flag = 0;
+                for (j = 2; j <= i/2; ++j)
+                {
+                    if(i % j == 0)
+                    {
+                        flag = 1;
+                        break;
+                    }
+                }
+                if(flag == 0)
+                {
+                    Console.WriteLine(i);
+                    ++count;
+                }
+
+                if (count == 500)
+                    break;
+                    
+
+            }
+            
+
+
+        }
+    }
 
 }
